@@ -19,9 +19,18 @@ dev = [
 ]
 
 [project.scripts]
-example-pkg = "daredevil:main"
+daredevil = "daredevil:app"
+
+[tool.uv.build-backend]
+module-name = "daredevil"
+namespace = true
 
 [build-system]
 requires = ["uv_build>=0.8.0,<0.9"]
 build-backend = "uv_build"
 
+
+# requires = ["setuptools", "wheel", "pip"]
+# build-backend = "setuptools.build_meta"
+# requires = ["hatchling"]
+# build-backend = "hatchling.build"

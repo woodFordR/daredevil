@@ -1,0 +1,17 @@
+$aqua:  #7FFFD4;
+$black: #000000;
+$gold:  #DAA520;
+
+Header {
+  background: $black;
+}
+
+Footer {
+  background: $black;
+}
+
+#metrics {
+  background: $aqua;
+  color: $gold;
+}
+
