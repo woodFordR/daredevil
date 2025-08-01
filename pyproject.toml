@@ -8,6 +8,7 @@ description = "to access and determine VM capabilities"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "sqlmodel>=0.0.24",
     "textual>=5.0.1",
 ]
 
