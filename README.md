@@ -12,4 +12,4 @@
 
 #### common commands
 
- - uv 
+ - `uv run -- textual run --dev src/daredevil/app.py`
