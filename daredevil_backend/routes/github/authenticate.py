@@ -62,9 +62,7 @@ async def get_app(*, app_slug: str, client_id: str) -> App:
     try:
         async with AsyncClient() as viper:
             response = await viper.get(url=url, headers=headers)
-            inspect(response)
             data = response.json()
-            inspect(data)
             github_app_obj = AppResponse.model_validate(data)
 
             session = await get_async_session()

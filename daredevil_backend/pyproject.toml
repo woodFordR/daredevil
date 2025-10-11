@@ -25,5 +25,17 @@ dev = [
     "rich>=14.1.0",
     "ruff>=0.13.0",
 ]
-test = []
+
+[tool.pytest.ini.options]
+addopts = [
+    "--strict-markers",
+    "--strict-config",
+    "-ra"
+    ]
+testpaths = "tests"
+
+markers = [
+    "smoke: subset of tests",
+    "exception: check for expected exceptions"
+]
 
